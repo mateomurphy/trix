@@ -1,5 +1,5 @@
 module TrixEditorHelper
-  cattr_accessor(:id, instance_accessor: false) { 0 }
+  mattr_accessor(:id, instance_accessor: false) { 0 }
 
   def trix_editor_tag(name, value = nil, options = {})
     options.symbolize_keys!
